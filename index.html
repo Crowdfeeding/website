@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfeeding: Fresh Free Food</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site">
+        <header>
+            <img src="./assets/logo.png" alt="Project Logo" class="logo">
+        </header>
+        <main>
+            <p>Crowdfeeding is a project developed by the DeGroote School of Business at McMaster University to tackle hunger and food insecurity. This innovative solution streamlines food rescue operations and ensures fresh food reaches Canadians in need.</p>
+            <p>We built a cross-platform mobile application that connects food banks, retailers, and individuals in need with our network of volunteer drivers. By leveraging advanced last-mile route optimization and scheduling models, we facilitate efficient, batched delivery routes.</p>
+            <p>Crowdfeeding is committed to advancing sustainability and fostering a more inclusive and environmentally responsible food ecosystem 💚</p>
+
+            <h1>Team</h1>
+            <p>
+                <span class="underline">Supervisors</span>: Dr. Elkafi Hassini, Ahana Malhotra, Sujana Saha<br>
+                <span class="underline">Contributors</span>: Aniket Kabra, Chonghua Li, Eddy Neufeld, Jarod Rankin, Lauren McDonald, Mehmet Kiraz, Micheal Baskaran, Rithvik Bhogadi, Sanjula Ganepola, Saruggan Thiruchelvan
+            </p>
+
+            <h1>Connect</h1>
+            <ul class="contact-list">
+                <li class="email">crowdfeeding1@gmail.com</li>
+                <li><a href="https://www.facebook.com" class="link" target="_blank">Facebook</a></li>
+                <li><a href="https://www.linkedin.com" class="link" target="_blank">Linkedin</a></li>
+            </ul>
+        </main>
+        <footer>
+            <p>DeGroote School of Business · McMaster University &copy; 2024</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const emailElement = document.querySelector('.contact-list li.email');
+        
+            emailElement.addEventListener('click', () => {
+                const email = emailElement.textContent;
+                navigator.clipboard.writeText(email)
+            });
+        });
+        </script>
+        
+</body>
+</html>
